@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/sample2.css" rel="stylesheet" type="text/css">
+    <script src="http://vuejs.org/js/vue.min.js"></script>
+</head>
+<body>
+<div id="demo">
+    <h1>{{title | uppercase}}</h1>
+    <ul>
+        <li
+                v-repeat="todos"
+                v-on="click: done = !done"
+                class="{{done ? 'done' : ''}}"
+                >
+            {{content}}
+        </li>
+    </ul>
+</div>
+
+<script src="./js/sample2.js"></script>
+</body>
+</html>

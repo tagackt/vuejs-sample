@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue Sample</title>
+    <script src="./js/vue.min.js"></script>
+</head>
+<body>
+<h1>train</h1>
+    <div>名前: {{firstName}}</div>
+    <div>苗字: {{lastName}}</div>
+    <div>フルネーム: {{fullName}}</div>
+    <input type="text" v-model="firstName">
+    <input type="text" v-model="lastName">
+
+    <div id="simple">
+        <span v-text="message" v-on="click: magnify" v-attr="style:font"></span>
+    </div>
+<script src="js/sample3.js"></script>
+<!-- 　ここでないと動かない理由がわからない・・・・　-->
+</body>
+</html>
+
